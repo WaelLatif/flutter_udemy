@@ -8,7 +8,7 @@ class CounterScreen extends StatefulWidget {
 }
 
 class _CounterScreenState extends State<CounterScreen> {
-  int counter = 2;
+  int counter = 5;
 
   @override
   void initState() {
