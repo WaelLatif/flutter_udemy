@@ -58,48 +58,50 @@ class MessengerScreen extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              padding: EdgeInsets.all(10.0),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(
-                  10.0,
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                padding: EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(
+                    10.0,
+                  ),
+                  color: Colors.grey[300],
                 ),
-                color: Colors.grey[300],
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.search,
+                    ),
+                    SizedBox(
+                      width: 15.0,
+                    ),
+                    Text(
+                      'Search',
+                    ),
+                  ],
+                ),
               ),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.search,
-                  ),
-                  SizedBox(
-                    width: 15.0,
-                  ),
-                  Text(
-                    'Search',
-                  ),
-                ],
+              SizedBox(
+                height: 15.0,
               ),
-            ),
-            SizedBox(
-              height: 15.0,
-            ),
-            Container(
-              height: 90.0,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) => buildStoryItem(),
-                itemCount: 10,
+              Container(
+                height: 90.0,
+                child: ListView.builder(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) => buildStoryItem(),
+                  itemCount: 10,
+                ),
               ),
-            ),
-            SizedBox(
-              height: 5.0,
-            ),
-            Expanded(
-
-              child: ListView.separated(
+              SizedBox(
+                height: 5.0,
+              ),
+              ListView.separated(
+                physics: NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
                 scrollDirection: Axis.vertical,
                 itemBuilder: (context, index) => buildChatItem(),
                 separatorBuilder: (context, index) =>SizedBox(
@@ -107,8 +109,8 @@ class MessengerScreen extends StatelessWidget {
                 ),
                 itemCount: 15,
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
