@@ -29,7 +29,6 @@ class _CounterScreenState extends State<CounterScreen> {
               onPressed: () {
                 setState(() {
                   counter--;
-                  print(counter);
                 });
               },
               child: Text(
@@ -56,7 +55,6 @@ class _CounterScreenState extends State<CounterScreen> {
               onPressed: () {
                 setState(() {
                   counter++;
-                  print(counter);
                 });
               },
               child: Text(
