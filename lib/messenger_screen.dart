@@ -90,7 +90,6 @@ class MessengerScreen extends StatelessWidget {
               Container(
                 height: 90.0,
                 child: ListView.builder(
-                  shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) => buildStoryItem(),
                   itemCount: 10,
@@ -104,7 +103,7 @@ class MessengerScreen extends StatelessWidget {
                 shrinkWrap: true,
                 scrollDirection: Axis.vertical,
                 itemBuilder: (context, index) => buildChatItem(),
-                separatorBuilder: (context, index) =>SizedBox(
+                separatorBuilder: (context, index) => SizedBox(
                   height: 15.0,
                 ),
                 itemCount: 15,
@@ -118,7 +117,6 @@ class MessengerScreen extends StatelessWidget {
 
   Widget buildChatItem() => Row(
         children: [
-
           Stack(
             alignment: AlignmentDirectional.bottomEnd,
             children: [
