@@ -76,6 +76,66 @@ class UsersScreen extends StatelessWidget {
       name: 'dena',
       phone: '0123456719',
     ),
+    UserModel(
+      id: 13,
+      name: 'shreef',
+      phone: '01225795823',
+    ),
+    UserModel(
+      id: 14,
+      name: 'shady',
+      phone: '0123456724',
+    ),
+    UserModel(
+      id: 15,
+      name: 'sara',
+      phone: '0123456725',
+    ),
+    UserModel(
+      id: 16,
+      name: 'nahed',
+      phone: '0123456726',
+    ),
+    UserModel(
+      id: 17,
+      name: 'lilian',
+      phone: '0123456727',
+    ),
+    UserModel(
+      id: 18,
+      name: 'amer',
+      phone: '0123456728',
+    ),
+    UserModel(
+      id: 19,
+      name: 'ibrahem',
+      phone: '01225795829',
+    ),
+    UserModel(
+      id: 20,
+      name: 'adel',
+      phone: '0123456730',
+    ),
+    UserModel(
+      id: 21,
+      name: 'koko',
+      phone: '0123456731',
+    ),
+    UserModel(
+      id: 22,
+      name: 'zalata',
+      phone: '0123456732',
+    ),
+    UserModel(
+      id: 23,
+      name: 'amira',
+      phone: '0123456733',
+    ),
+    UserModel(
+      id: 24,
+      name: 'gena',
+      phone: '0123456734',
+    ),
   ];
   @override
   Widget build(BuildContext context) {
