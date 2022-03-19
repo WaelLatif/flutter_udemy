@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-Widget defaultFormField({
+Widget defaultFormField
+    (
+    {
   required TextEditingController controller,
   required TextInputType keyboardType,
   bool isPassword = false,
