@@ -38,7 +38,7 @@ class _CounterScreenState extends State<CounterScreen> {
                 children: [
                   TextButton(
                     onPressed: () {
-                      CounterCubit.get(context).minus();
+                      CounterCubit.get(context).minus(); 
                       },
                     child: Text(
                       'MINUS',
